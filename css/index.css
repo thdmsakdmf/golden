@@ -1,0 +1,255 @@
+body, html {
+  margin: 0;
+}
+
+h1, h2, h3, figure, p {
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 70px 0;
+}
+
+header > div {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* type-01 */
+}
+
+header > div h1 {
+  color: #fed136;
+  font-size: 2rem;
+}
+
+header > div nav a {
+  color: white;
+  padding: 0 30px;
+}
+
+header > div .menu-trigger,
+header > div .menu-trigger span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header > div .menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  display: none;
+}
+
+header > div .menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+header > div .menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+header > div .menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+header > div .menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+header > div .menu-trigger.active-1 span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+          transform: translateY(20px) rotate(-45deg);
+}
+
+header > div .menu-trigger.active-1 span:nth-of-type(2) {
+  opacity: 0;
+}
+
+header > div .menu-trigger.active-1 span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+          transform: translateY(-20px) rotate(45deg);
+}
+
+.spot div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.spot div small {
+  color: white;
+  font-size: 3rem;
+}
+
+.spot div strong {
+  color: white;
+  font-size: 7rem;
+}
+
+.spot div a {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #fed136;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
+
+.spot img {
+  width: 100%;
+}
+
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 3rem;
+  color: #222;
+}
+
+section > p {
+  margin: 20px 0;
+}
+
+section div {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section div figure {
+  position: relative;
+  width: 31%;
+  margin-top: 100px;
+}
+
+section div figure::before, section div figure::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  border-top: 5px solid #fed136;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section div figure::before {
+  top: 0;
+  left: 0;
+}
+
+section div figure::after {
+  bottom: 0;
+  right: 0;
+}
+
+section div figure:hover::before, section div figure:hover::after {
+  width: 100%;
+}
+
+section div figure figcaption {
+  margin-top: 40px;
+}
+
+section div figure figcaption b {
+  font-size: 1.4rem;
+}
+
+section div figure figcaption p {
+  margin-top: 20px;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
+.bg-gray img {
+  width: 100%;
+}
+
+.bg-gray figcaption {
+  margin: 0;
+  background-color: white;
+  padding: 40px;
+}
+/*# sourceMappingURL=index.css.map */

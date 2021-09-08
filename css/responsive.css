@@ -1,0 +1,41 @@
+    
+    header{ 
+        background:#000; 
+        padding:20px; color:#fff;
+        text-align: center;
+    }
+    article{padding:60px;}
+    article > h1{font-size:5em;}
+    article > div{white-space: pre-line;}
+    footer{ 
+        background:rgb(185, 185, 185); 
+        padding:20px;
+        text-align: center;
+     }
+    
+    
+    /* 
+    pc(1024 ~)
+    태블릿(768 ~ 1023)
+    모바일가로 (480~767)
+    모바일(~480) 
+    */    
+
+    @media (min-width:1024px){ 
+        article{background:coral;}
+    }
+    @media (min-width:768px) and (max-width:1023px){ 
+        article{background:cornflowerblue;}
+    }
+    @media (min-width:481px) and (max-width:767px){ 
+        article{background:darkgoldenrod;}
+    }
+    @media (max-width:480px){ 
+        article{background:darkred;}
+    }
+
+
+    @media print{
+        header{display:none;}
+        footer{display:none;}
+    }

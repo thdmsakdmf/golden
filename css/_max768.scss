@@ -1,0 +1,25 @@
+
+//_max768.scss
+@media (max-width:768px){
+    $red : #00f;
+    .gallery{
+        width:100%; margin:0 auto;
+        h2{
+            text-align: center;
+            color:$red;
+        }
+        div{
+            border:1px solid $red;
+            display: block;
+            justify-content: space-between;
+            figure{
+                margin:0;
+                width:100%;
+                overflow:hidden;
+    
+                img{width:100%; transition: .5s;}
+                &:hover img{transform: scale(1.3);}
+            }
+        }
+    }
+}
